@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beach Destinations - Explore the World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0077b6;
+  padding: 15px 40px;
+}
+
+.logo {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ffb703;
+}
+
+/* ===== Hero Section ===== */
+.hero, .sub-hero {
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before, .sub-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #ffb703;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffaa00;
+}
+
+/* ===== Cards Section ===== */
+.destinations {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f7f9fb;
+}
+
+.destinations h2 {
+  color: #023e8a;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 119, 182, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #0077b6;
+  margin: 15px 0 8px 0;
+}
+
+.card p {
+  padding: 0 20px 25px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+</style>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1 class="logo">🌊 ExploreTheWorld</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="india.html">India Tourism</a></li>
+      <li><a href="adventure.html">Adventure Tourism</a></li>
+      <li><a href="history.html">Historical Places</a></li>
+      <li><a href="beaches.html" class="active">Beach Destinations</a></li>
+      <li><a href="food.html">Food & Culture</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="sub-hero">
+    <div class="hero-text">
+      <h2>Top Beach Destinations</h2>
+      <p>Discover the most stunning beaches across the world — where golden sands meet turquoise seas and sunsets touch your soul.</p>
+    </div>
+  </header>
+
+  <!-- Beach Cards -->
+  <section class="destinations">
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Goa Beach">
+        <h3>Goa, India</h3>
+        <p>Goa offers the perfect blend of sun, sea, and sand. Known for its lively beaches, beachside cafes, and night markets, it’s a paradise for those seeking both adventure and peace. Whether you want to party by the shore or watch the sunset with calm waves, Goa welcomes you warmly.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4" alt="Maldives Beach">
+        <h3>Maldives</h3>
+        <p>The Maldives is a luxurious getaway known for its crystal-clear lagoons and coral reefs. Overwater villas, white sand beaches, and mesmerizing marine life make it a top choice for honeymooners and travelers searching for ultimate relaxation.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1470214203634-e436a8848e23" alt="Andaman Beach">
+        <h3>Andaman Islands, India</h3>
+        <p>A tropical paradise with turquoise waters, the Andaman Islands offer coral reefs, scuba diving adventures, and pristine beaches like Radhanagar. It’s the ideal escape for nature lovers and peace seekers alike.</p>
+      </div>
+
+      <div class="card">
+        <!-- ✅ Fixed Hawaii Image -->
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?crop=entropy&cs=tinysrgb&fit=crop&w=1200&q=80" alt="Hawaii Beach">
+        <h3>Hawaii, USA</h3>
+        <p>Hawaii’s beaches are world-famous for their beauty and adventure. From surfing on Waikiki Beach to exploring volcanic landscapes, Hawaii offers a rich blend of culture, nature, and thrilling experiences that stay with you forever. The islands’ tropical charm makes every visit magical.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ExploreTheWorld | Designed by Omkar Nevhal 
+  </footer>
+
+</body>
+</html>
